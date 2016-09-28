@@ -7,6 +7,9 @@ namespace _10_Collections
     {
         public int Compare(IAsset first, IAsset second) {
             int result = 0;
+            //Remember when you compare objects by their state (values of instance-fields) you should NEVER
+            //use the "==" operator (it compares the references and is true if, and only if they refer to
+            //the same object). Always use Equals(), Compare() or CompareTo
             if ( first.GetName().CompareTo( second.GetName() ) > 0) {
                 result = 1;
             }

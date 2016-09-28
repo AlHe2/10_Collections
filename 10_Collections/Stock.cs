@@ -30,8 +30,8 @@ namespace _10_Collections
 
         public override string ToString() {
             return "Stock[symbol=" + Symbol + 
-                ",pricePerShare=" + PricePerShare + 
-                ",numShares=" + NumShares + "]";
+                   ",pricePerShare=" + PricePerShare + 
+                   ",numShares=" + NumShares + "]";
         }
 
         public override bool Equals(object obj) {

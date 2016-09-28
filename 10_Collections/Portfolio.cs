@@ -34,6 +34,10 @@ namespace _10_Collections
             return element;
         }
 
+        internal IList<IAsset> GetAssets() {
+            return _assets;
+        }
+
         internal IList<IAsset> GetAssetsSortedByName() {
             _assets.Sort(new StockNameComparator());
             return _assets;
